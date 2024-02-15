@@ -3,7 +3,7 @@
 
 This project performs various operations on a linked list. These operations include adding elements to the beginning, middle, or end of the list, deleting an element from the list, and searching for an element in the list.
 
-#Operations
+# Operations
 Insertion:
 
 Inserting an element at the beginning of the list.
