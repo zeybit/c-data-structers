@@ -29,7 +29,7 @@ This project implements a basic stack data structure in C++. It provides functio
 
 
 
-# Features
+## Features
 
 - **Push**: Adds an element to the top of the stack.
 - **Pop**: Removes and returns the top element from the stack.
