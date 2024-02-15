@@ -4,18 +4,18 @@
 This project performs various operations on a linked list. These operations include adding elements to the beginning, middle, or end of the list, deleting an element from the list, and searching for an element in the list.
 
 ## Operations
--*Insertion*:
 
+-**Insertion**:
 Inserting an element at the beginning of the list.
 Inserting an element in the middle of the list.
 Inserting an element at the end of the list.
--*Deletion*:
 
+-**Deletion**:
 Deleting a node from the beginning of the list.
 Deleting a node from the middle of the list.
 Deleting a node from the end of the list.
--*Search*:
 
+-**Search**:
 Searching for a specific element in the list.
 
 
