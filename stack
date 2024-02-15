@@ -1,0 +1,59 @@
+
+#include <iostream>
+
+using namespace std;
+ class StackNode{
+     public:
+     int data;
+     StackNode* next;
+     
+ };
+ StackNode* newNode(int data){
+     StackNode* stackNode=new StackNode;
+     stackNode->next=nullptr;
+     stackNode->data=data;
+     return stackNode;
+ }
+  int isEmpty(StackNode* root){
+     return !root;
+     
+ }
+ void push(StackNode** root ,int data){
+     StackNode* stackNode=newNode(data);
+     stackNode->next=*root;
+     *root=stackNode;
+     cout<<data<<" is pushed into the stack "<<endl;
+ }
+ int pop(StackNode** root){
+     if(isEmpty(*root))
+         return -999;//INT_MIN
+     StackNode* temp=*root;
+     *root=(*root)->next;
+     int popped=temp->data;
+     free(temp);
+     return popped;
+ }
+ int peek(StackNode* root){
+    if(isEmpty(root))
+      return-999;
+    return root->data;
+    
+ }
+ void print(StackNode** root){
+  while(!isEmpty(*root)){   
+  cout<<peek(*root)<<" ";
+  pop(root);}
+ }
+int main()
+{
+    StackNode* root=nullptr;
+    push(&root,36);
+    push(&root,29);
+    push(&root,69);
+    push(&root,11);
+    cout<<"top element :"<<peek(root)<<endl;
+    cout<<pop(&root)<<" is popped out from stack "<<endl;
+    cout<<"elements in present in stack:";
+    print(&root);
+    return 0;
+}
